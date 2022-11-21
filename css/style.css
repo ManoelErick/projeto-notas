@@ -1,0 +1,104 @@
+/* Definição padrão da tela para qualquer site */
+*{
+    margin: 0;
+}
+/* Colocando uma fonte padrão em todo o corpo do código do site */
+body {
+    font-family: 'roboto', sans-serif;
+    background-color: #D4D2D3;
+}
+/* Definições do cabeçalho */
+header {
+    text-align: center;
+    background-color: #2B7AB0;
+    color: azure;
+    padding: 10px;
+
+}
+/* Fazendo com que o main fique melhor localizado na tela*/
+main {
+    padding: 30px 50px;
+}
+/* Estilizando a div"campos" de inserir dados dentro do main
+    "margin-top" => distânciar "campos" do "title".
+    "padding: 20px" => aumentar o tamanho do "campo" criando uma "borda" em volta dele.
+    
+*/
+.campos {
+    border: 1px;
+    background-color: #2B7AB0;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+/*  "display: grid" => para deixar os campos um abaixo do outro.
+    "margin-bottom" => aumentar distâncias dos campos de inserção de dados.
+
+*/
+.lineInput {
+    display: grid;
+    margin-bottom: 15px;
+}
+
+/* Aumentando tamanho dos campos de inserção de dados */
+input {
+    padding: 10px;
+    background-color: #EDEAEC;
+    border: 1px solid #2B7AB0;
+    border-radius: 5px;
+
+}
+
+h2 {
+    color: #09618d;
+}
+
+label {
+    color: azure;
+}
+
+button {
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #62BEF0;
+    color: ghostwhite;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #4BB2E5;
+}
+
+.container {
+    border: 0px;
+    margin-top: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid #2B7AB0;
+    width: 100%;
+    
+}
+
+table td, th {
+    padding: 1px 5px;
+    text-align: left;
+    border: 1px solid;
+    
+}
+
+table th {
+    background-color: #ABB0CC;
+}
+
+table td img{
+    width: 25px;
+}
+
+tr {
+    text-align: center;
+}
