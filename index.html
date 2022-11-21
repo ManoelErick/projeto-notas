@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aluno</title>
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body>
+        <header>
+            <h1>Inserir dados do aluno e calcular nota</h1>
+        </header>
+
+        <main>
+            <div class="title">
+                <h2>Campos de dados</h2>
+            </div>
+            <div class="campos">
+
+                <div class="lineInput">
+                    <label>Nome do aluno</label>
+                    <input type="text" id="nome" placeholder="Insera nome do aluno">
+                </div>
+                <div class="lineInput">
+                    <label>Matrícula</label>
+                    <input type="text" id="matricula" placeholder="Insira a matrícula">
+                </div>
+                <div class="lineInput">
+                    <label>Primeira nota</label>
+                    <input type="text" id="nota1" placeholder="Insira a primeira nota">
+                </div>
+                <div class="lineInput">
+                    <label>Segunda nota</label>
+                    <input type="text" id="nota2" placeholder="Insira a segunda nota">
+                </div>
+                <div class="lineInput">
+                    <label>Terceira nota</label>
+                    <input type="text" id="nota3" placeholder="Insira a terceira nota">
+                </div>
+
+                <button onclick="aluno.salvandoAluno()">Adicionar Dados</button>
+                <button id="cancelar" onclick="aluno.cancelar()">Cancelar</button>
+            </div>
+
+            <div class="container">
+                <table border="1">
+                    <thead>
+                        <th>Nome</th>
+                        <th>Matrícula</th>
+                        <th>Nota 01</th>
+                        <th>Nota 02</th>
+                        <th>Nota 03</th>
+                        <th>Média</th>
+                        <th>Excluir</th>
+                    </thead>
+                    
+                    <tbody id="tabelas">
+
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </body>
+    
+    <script src="js/aluno.js"></script>
+</html>
